@@ -361,3 +361,13 @@ section:not(.hero) .container > p {
         border-color 0.25s ease,
         background 0.25s ease;
 }
+
+.exercise-card:hover {
+    transform: translateY(-8px);
+
+    border-color: 
+        rgba(98, 212, 255, 0.45);
+
+    background:
+        rgba(22, 31, 50, 0.88);
+}
