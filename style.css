@@ -242,3 +242,11 @@ nav ul a:hover::after {
         transform 0.2s ease,
         box-shadow 0.2s ease;
 }
+
+.primary-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 50px
+        rgba(98, 212, 255, 0.3);
+}
