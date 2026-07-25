@@ -186,3 +186,17 @@ nav ul a:hover::after {
 
     letter-spacing: -0.06em;
 }
+
+.hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--accent-blue),
+            var(--accent-purple)
+        );
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
