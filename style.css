@@ -313,3 +313,27 @@ nav ul a:hover::after {
     position: relative;
     z-index: 1;
 }
+
+
+section:not(.hero) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+section:not(.hero) h2 {
+    margin-bottom: 28px;
+
+    font-size: clamp(
+        2.5rem,
+        5vw,
+        4.5rem
+    );
+
+    line-height: 1.05;
+
+    letter-spacing: -0.05em;
+}
+
+section:not(.hero) .container > p {
+    max-width: 700px;
+}
