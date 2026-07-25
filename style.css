@@ -337,3 +337,27 @@ section:not(.hero) h2 {
 section:not(.hero) .container > p {
     max-width: 700px;
 }
+
+.exercise-card {
+    max-width: 700px;
+
+    margin-top: 50px;
+
+    padding: 38px;
+
+    border: 1px solid var(--border);
+    border-radius: 24px;
+
+    background: var(--card-background);
+
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 24px 70px
+        rgba(0, 0, 0, 0.28);
+    
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
