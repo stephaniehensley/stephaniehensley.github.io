@@ -200,3 +200,11 @@ nav ul a:hover::after {
 
     color: transparent;
 }
+
+.hero-description {
+    max-width: 680px;
+
+    margin-top: 32px;
+
+    font-size: 1.15rem;
+}
