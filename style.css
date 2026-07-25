@@ -274,3 +274,42 @@ nav ul a:hover::after {
     position: relative;
     overflow: hidden;
 }
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.65) 1px,
+            transparent 1.5px
+        );
+    
+    background-size: 210px 210px;
+
+    transform: translate(60px, 40px);
+
+    opacity: 0.22;
+
+    animation: star-drift 24s linear infinite;
+}
+
+@keyframes star-drift {
+    from {
+        transform: translate(60px, 40px);
+    }
+
+    to {
+        transform: translate(120px, 100px);
+    }
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
