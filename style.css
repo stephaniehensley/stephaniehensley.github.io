@@ -49,3 +49,12 @@ body {
     
     line-height: 1.7;
 }
+
+p {
+    color: var(--text-secondary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
