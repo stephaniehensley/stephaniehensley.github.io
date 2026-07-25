@@ -127,3 +127,26 @@ nav ul a {
 nav ul a:hover {
     color: var(--text-primary);
 }
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--accent-blue);
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.25s ease;
+}
+
+nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
