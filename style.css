@@ -150,3 +150,39 @@ nav ul a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.hero {
+    display: flex;
+
+    min-height: 100vh;
+
+    align-items: center;
+
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.eyebrow {
+    margin-bottom: 24px;
+
+    color: var(--accent-blue);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 950px;
+    font-size: clamp(
+        3.4rem,
+        8vw,
+        7.2rem
+    );
+
+    line-height: 0.98;
+
+    letter-spacing: -0.06em;
+}
