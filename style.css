@@ -402,3 +402,34 @@ section:not(.hero) .container > p {
 .exercise-card a:hover {
     color: var(--accent-blue);
 }
+
+@media (max-width: 700px) {
+    nav {
+        min-height: 68px;
+    }
+
+    nav ul {
+        gap: 14px;
+    }
+
+    nav ul a {
+        font-size: 0.75rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(
+            3rem,
+            15vw,
+            5rem
+        );
+    }
+
+    section:not(.hero) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .exercise-card {
+        padding: 28px;
+    }
+}
