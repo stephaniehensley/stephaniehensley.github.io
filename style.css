@@ -448,6 +448,34 @@ section:not(.hero) .container > p {
     .exercise-content > p:not(.exercise-number) {
         min-height: auto;
     }
+
+        .exercise-page-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .exercise-details {
+        position: static;
+    }
+
+    .exercise-hero {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .back-link {
+        margin-bottom: 45px;
+    }
+
+    .exercise-section {
+        padding-top: 75px;
+        padding-bottom: 90px;
+    }
+
+    .exercise-image-placeholder {
+        min-height: 330px;
+    }
     
 }
 
