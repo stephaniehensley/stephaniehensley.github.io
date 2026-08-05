@@ -433,3 +433,88 @@ section:not(.hero) .container > p {
         padding: 28px;
     }
 }
+
+.exercise-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+    margin-top: 50px;
+}
+
+.exercise-card {
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background: var(--card-background);
+
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 24px 70px
+        rgba(0, 0, 0, 0.28);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(98, 212, 255, 0.48);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.38);
+}
+
+.exercise-card-link {
+    display: block;
+    height: 100%;
+}
+
+.exercise-content {
+    padding: 32px;
+}
+
+.exercise-content h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    color: var(--text-primary);
+
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.exercise-content > p:not(.exercise-number) {
+    min-height: 84px;
+}
+
+.exercise-link {
+    display: inline-block;
+
+    margin-top: 26px;
+
+    color: var(--text-primary);
+
+    font-weight: 700;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.exercise-card:hover .exercise-link {
+    color: var(--accent-blue);
+
+    transform: translateX(5px);
+}
