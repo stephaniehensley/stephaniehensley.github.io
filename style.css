@@ -1112,3 +1112,235 @@ h2:not(:first-child) {
         0 14px 35px
         rgba(0, 0, 0, 0.3);
 }
+
+.comparison-figure {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-left: auto;
+}
+
+.comparison-figure img {
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    object-fit: contain;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    box-shadow:
+        0 18px 50px
+        rgba(0, 0, 0, 0.25);
+}
+
+/* Smaller original chart */
+.original-figure {
+    max-width: 520px;
+}
+
+/* Your recreation can remain slightly larger */
+.recreation-figure {
+    max-width: 700px;
+}
+
+.evidence-grid {
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-top: 8px;
+    padding-bottom: 16px;
+
+    scroll-behavior: smooth;
+}
+
+.evidence-grid img {
+    display: block;
+
+    flex: 0 0 105px;
+
+    width: 105px;
+    height: 105px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--background-light);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.evidence-grid img:hover {
+    transform: translateY(-4px) scale(1.04);
+
+    border-color: rgba(98, 212, 255, 0.5);
+
+    box-shadow:
+        0 12px 28px
+        rgba(0, 0, 0, 0.32);
+}
+
+.evidence-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.evidence-grid::-webkit-scrollbar-track {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.evidence-grid::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background:
+        linear-gradient(
+            90deg,
+            var(--accent-blue),
+            var(--accent-purple)
+        );
+}
+
+.evidence-dropdown {
+    margin-top: 130px;
+    margin-bottom: 60px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(98, 212, 255, 0.3);
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(98, 212, 255, 0.08),
+            rgba(141, 116, 255, 0.08)
+        ),
+        var(--card-background);
+
+    box-shadow:
+        0 24px 70px
+        rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(18px);
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.evidence-dropdown:hover {
+    border-color: rgba(98, 212, 255, 0.55);
+
+    box-shadow:
+        0 28px 80px
+        rgba(0, 0, 0, 0.38);
+}
+
+.evidence-dropdown[open] {
+    border-color: rgba(98, 212, 255, 0.6);
+
+    box-shadow:
+        0 30px 90px
+        rgba(0, 0, 0, 0.42);
+}
+
+.evidence-dropdown summary {
+    display: flex;
+
+    min-height: 92px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    padding: 28px 36px;
+
+    color: var(--text-primary);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    letter-spacing: -0.01em;
+
+    cursor: pointer;
+    list-style: none;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.evidence-dropdown summary:hover {
+    color: var(--accent-blue);
+
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.evidence-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-icon {
+    display: grid;
+
+    flex: 0 0 46px;
+
+    width: 46px;
+    height: 46px;
+
+    place-items: center;
+
+    border: 1px solid rgba(98, 212, 255, 0.35);
+    border-radius: 50%;
+
+    background: rgba(98, 212, 255, 0.08);
+
+    color: var(--accent-blue);
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.evidence-dropdown[open] .dropdown-icon {
+    transform: rotate(45deg);
+
+    background: rgba(98, 212, 255, 0.16);
+}
+
+.evidence-content {
+    padding: 28px 36px 36px;
+
+    border-top: 1px solid var(--border);
+}
+
+.evidence-introduction {
+    max-width: 700px;
+
+    margin-bottom: 28px;
+}
