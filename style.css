@@ -1493,3 +1493,30 @@ h2:not(:first-child) {
         0 28px 75px
         rgba(0, 0, 0, 0.4);
 }
+
+#exercises {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.exercises-heading {
+    margin-bottom: 18px;
+
+    color: var(--text-primary);
+
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1.05;
+
+    letter-spacing: -0.05em;
+}
+
+.exercises-introduction {
+    max-width: 680px;
+    margin-bottom: 55px;
+
+    font-size: 1.05rem;
+}
+
+.exercise-grid {
+    margin-top: 0;
+}
