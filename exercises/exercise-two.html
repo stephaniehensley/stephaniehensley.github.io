@@ -86,9 +86,10 @@
                             The Exercise
                         </h2>
 
-                        <figure class="exercise-figure">
+                        <figure class="exercise-figure map-figure">
                             <img
-                            src="../images/Meteor_Map_Screenshot.png"
+                                class="lightbox-image"
+                                src="../images/Meteor_Map_Screenshot.png"
                             >
                             <figcaption>
                                 Figure 1. David Wendler’s “Every meteorite we saw falling down to Earth”, which displays the location, year of observation and the recorded mass of meteorites witnessed falling down to Earth. 
@@ -177,6 +178,30 @@
             </p>
         </div>
     </footer>
+    
+    <div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged image"
+    >
+        <button
+            id="lightbox-close"
+            class="lightbox-close"
+            type="button"
+            aria-label="Close enlarged image"
+        >
+            &times;
+        </button>
 
+        <img
+            id="lightbox-display"
+            src=""
+            alt=""
+        >
+    </div>
+
+    <script src="../script.js"></script>
 </body>
 </html>
