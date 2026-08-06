@@ -879,3 +879,26 @@ h2:not(:first-child) {
     font-size: 0.82rem;
     line-height: 1.5;
 }
+
+.exercise-preview {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.exercise-preview img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
