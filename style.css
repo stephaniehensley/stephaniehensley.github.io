@@ -1520,3 +1520,12 @@ h2:not(:first-child) {
 .exercise-grid {
     margin-top: 0;
 }
+.exercises-heading {
+    margin-bottom: 20px;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
