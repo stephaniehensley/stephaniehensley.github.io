@@ -902,3 +902,31 @@ h2:not(:first-child) {
 
     transition: transform 0.5s ease;
 }
+
+.exercise-preview {
+    position: relative;
+    height: 220px;      /* <-- fixed height */
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.exercise-preview img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.exercise-figure img {
+
+    display: block;
+
+    width: 80%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+}
