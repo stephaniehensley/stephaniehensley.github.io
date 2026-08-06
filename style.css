@@ -1413,3 +1413,44 @@ h2:not(:first-child) {
 #lightbox-close:hover {
     color: var(--accent-blue);
 }
+
+.original-figure {
+    width: 100%;
+    max-width: 900px;
+
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+}
+
+.original-figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    cursor: zoom-in;
+
+    box-shadow:
+        0 22px 60px
+        rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.original-figure img:hover {
+    transform: scale(1.015);
+
+    border-color: rgba(98, 212, 255, 0.5);
+
+    box-shadow:
+        0 28px 75px
+        rgba(0, 0, 0, 0.4);
+}
