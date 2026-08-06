@@ -1567,3 +1567,73 @@ h2:not(:first-child) {
         0 28px 75px
         rgba(0, 0, 0, 0.4);
 }
+
+.exercise-preview {
+    position: relative;
+
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+
+    background: var(--background-light);
+}
+
+.exercise-preview img {
+    position: absolute;
+    inset: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.exercise-preview p {
+    position: absolute;
+    z-index: 2;
+
+    left: 24px;
+    bottom: 24px;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+
+    background: rgba(8, 11, 20, 0.74);
+
+    color: var(--text-primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    backdrop-filter: blur(10px);
+}
+
+.exercise-card-link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.exercise-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.exercise-link {
+    margin-top: auto;
+    padding-top: 26px;
+}
