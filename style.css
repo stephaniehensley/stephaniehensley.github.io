@@ -1344,3 +1344,19 @@ h2:not(:first-child) {
 
     margin-bottom: 28px;
 }
+
+.exercise-details a {
+    color: var(--accent-blue);
+
+    text-decoration: underline;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    display: inline-block;
+    max-width: 100%;
+}
+
+.exercise-details {
+    overflow-wrap: anywhere;
+}
