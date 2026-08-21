@@ -82,41 +82,154 @@
                     <div class="exercise-main-content">
 
                         <h2>
-                            The Exercise
+                            The Visualisation
                         </h2>
 
-                        <figure class="exercise-figure map-figure">
+                        <figure class="exercise-figure module-three-figure">
                             <img
                                 class="lightbox-image"
-                                src="../images/Meteor_Map_Screenshot.png"
+                                src="../images/HowMuchDV.png"
                             >
                             <figcaption>
-                                Figure 1. David Wendler’s “Every meteorite we saw falling down to Earth”, which displays the location, year of observation and the recorded mass of meteorites witnessed falling down to Earth. 
+                                Figure 1. Computer device exports by country in 2019, produced by HowMuch (Irena, 2020).
                             </figcaption>
                         </figure>
 
                         <p>
-                            For this portfolio exercise, I selected David Wendler’s data visualisation <b>Every meteorite we saw falling down to Earth</b>. The visualisation displays meteorites that were observed falling down to Earth, which included all available records up until 2013. Each circle represents a meteorite that was observed, with its position showing where it had landed. Furthermore, the colours indicate the year in which it was observed, and its size represents its recorded mass in kilograms, as evident in the legends along the lefthand side. The visualisation also included annotations that identify important events, however, the majority of this analysis will focus on the individual data points rather than the annotations themselves. Ultimately, it is important to note that the geographic patterns within this visualisation are influenced by observation capabilities and notably, population of the respective regions. 
+                            Include a little summary!
                         </p>
 
                         <h2>
-                            Analysis
+                            variables
                         </h2>
 
+                        <div class="table-wrapper">
+                            <table class="exercise-table">
+                                <thead>
+                                    <tr>
+                                        <th>Variable</th>
+                                        <th>Type of Variable</th>
+                                        <th>Unit</th>
+                                        <th>Level of Measurement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Country</td>
+                                        <td>Qualitative, Categorical</td>
+                                        <td>N/A</td>
+                                        <td>Nominal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Computer Device Export Value</td>
+                                        <td>Quantitative, Continuous</td>
+                                        <td>US Dollars (USD) in millions or billions</td>
+                                        <td>Ratio</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <p>
-                            <b>1. What aspect of your chosen visualisation first grabbed your attention? Explain the feature in terms of preattentive processing. </b> <br>
-                            Immediately, the feature that first grabbed my attention was the significantly large circle toward eastern Russia, which represents the Sikhote-Alin meteorite, according to its annotation. Size may be considered a preattentive visual attribute, specifically when identifying stark similarities and differences within the data; in this case, the size of this data point is quickly identified before I could actively read the annotations or look at the legends. It evidently stands out from the rest of the map due to the significant contrast between the very large circle and the large number of smaller circles surrounding it. This immediately implied that this meteorite was abnormally massive, and its purple-pink hue and location increased its visibility even further. Thus, while it’s often objects of similar shape, size and colour that draw the viewer’s attention, specifically towards making connections between different data points, this specific circle element has the opposite effect; exhibiting a less common colour, a fairly ‘quiet’ location and a large-size difference ensures that it stands out immediately and emphasises its importance. 
-                            <br>
-                            <br>
-                            <b>2. Explain one Gestalt law that your chosen visualisation demonstrates.</b><br>
-                            The Gestalt Law of Proximity, which states that objects that are located near to each other tend to be recognised as belonging to the same group, is clearly demonstrated in this visualisation. The closely spaced circles form visible clusters, especially throughout Europe, North America, Japan, and India and as a result, prior to independently examining each meteorite observation on the map, the viewer is more inclined to see regional trends based off of these evident clusters. As a result of this, the law of proximity aids in identifying geographic patterns, and allows for further questioning in regard to why some meteorite observations are more common in some regions than others.
-                            <br>
-                            <br>
-                            <b>3. Choose one of the quantitative variables visualised and discuss its visual accuracy.</b> <br>
-                            One quantitative variable visualised is the meteorite mass in kilograms, where the area of each circle represents some recorded mass. This alone allows for exceptionally massive meteorite observations to be recognised easily, as they appear much larger than the typical meteorite recordings. However, since the viewers must compare each circle’s area with the scale included at the bottom lefthand side, rather than evaluating a position or length along an axis, area is not a visually accurate method of distinguishing the masses of the recorded meteorites. For example, it is very simple to establish that the Sikhote-Alin meteorite was far heavier than the majority of other meteorites, but it is increasingly difficult to determine how much heavier it is in comparison to some other meteorite, and its actual mass. Additionally, the area of some data points that are not directly included on the scale are even more difficult to determine the mass of, leading to a much larger need for estimation. As a result, it is useful for finding regional patterns, but more data would be required for mass comparisons and determinations. 
+                            <b>1. Country</b> <br>
+                            As summarised in Table 1, country is a categorical variable with no unit of measurement. Additionally, it is measured at the nominal level since they are distinct categories, and there are no rankings or intervals between the countries themselves. <br>
+                            This is visually encoded using the country’s respective silhouette, and their accompanying labels. There is also some regional clustering in terms of continents; i.e. European countries are kept in a similar position to where they would appear on a typical map. <br>
+                            <b>2. Computer Device Export Value</b> <br>
+                            As summarised in Table 1, computer device export value is a quantitative variable measured in US dollars and is displayed on the visualisation as either in millions or billions of dollars. Additionally, it is measured at the ratio level since there is an absolute zero point; i.e. no computer device exports would result in a value of $0, and meaningful ratios can be calculated between the values. Since it is measured at a ratio level, the computer device export value is continuous since these values could theoretically be infinite within some given range. <br>
+                            The export value of computer devices per country is visually encoded in multiple ways. Firstly, the most prominent technique regards the area/size of the country; the larger the country, the higher the export value. For instance, evidence of this can be seen by a comparison of China against Brazil, where there is a very significant size difference due to their varying export value. Secondly, another obvious visual encoding of this export value is through the use of labels for each country, clearly stating the export value in USD. Lastly, a comparatively less prominent method is the colour of each country, as evident using the legend toward the bottom-middle of the data visualisation. <br>
 
                         </p>
 
+                        <h2>
+                            Data and Question Alignment
+                        </h2>
+
+                        <p>
+                            There is strong alignment between the data (D) and the question (Q) posed by the data visualisation (Figure 1). The question can be interpreted as <i>“Which countries exported the most computer devices in 2019, and how did their export values compare?”</i> The data directly answers this question by providing the numerical value, in USD, from every reporting country that accumulated an export value of at least $100 million, in 2019. This makes it possible to compare countries and identify the largest exporters of computer devices. For instance, it is evident that China is the largest exporter, while in the data visualisation, Brazil is the smallest exporter of computer devices. Hence, the data and question are strongly aligned. 
+                        </p>
+
+                        <h2>
+                            Data Comparison and Verification
+                        </h2>
+
+                        <p>
+                            The values represented in the HowMuch visualisation were compared with the 2019 export data for HS code 8471 obtained from the International Trade Center (ITC) Trade Map database, as referenced below. The large majority of the values shown in the visualisation could be verified against the source data; minor discrepancies were mostly caused by HowMuch rounding export quantities to the closest million or billion USD. For instance, Canada’s export value was presented as $2B, while the ITC database reports that the value was $1.6B, which frankly is a large amount of money to be rounding upwards. Similarly, Mexico was presented as $32B, while the ITC database reports ~$32.3B. However, these were not the main concerns regarding this data visualisation. Table 2, below, summarises the largest discrepancies found by comparison of the data: <br>
+                        </p>
+
+                        <div class="table-wrapper">
+                            <table class="exercise-table">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>HowMuch Data Visualisation</th>
+                                        <th>ITC Trade Map Database</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Netherlands</td>
+                                        <td>$28B</td>
+                                        <td>~ $11B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United Arab Emirates</td>
+                                        <td>$132M</td>
+                                        <td>~ $4.34B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Israel</td>
+                                        <td>$573M</td>
+                                        <td>~ $576M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panama</td>
+                                        <td>N/A</td>
+                                        <td>~ $319M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lithuania</td>
+                                        <td>$227M</td>
+                                        <td>~ $296M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indonesia</td>
+                                        <td>$194M</td>
+                                        <td>~ $236M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bulgaria</td>
+                                        <td>$204M</td>
+                                        <td>~ $201M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chile</td>
+                                        <td>N/A</td>
+                                        <td>~ $115M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Portugal</td>
+                                        <td>$105M</td>
+                                        <td>~ $99.7M</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            As presented in Table 2, it is clear that two serious discrepancies have been found regarding the Netherlands and the United Arab Emirates. Netherlands is reported by HowMuch as having $28 billion in exports, whereas the 2019 ITC data reports approximately $11 billion. Similarly, the United Arab Emirates is shown by HowMuch as exporting only $132 million, while the ITC reports approximately $4.34 billion. These discrepancies are far too serious to be attributed to rounding errors, and HowMuch therefore misrepresents the importance of these countries in the data visualisation. Israel, Lithuania, Indonesia and Bulgaria also demonstrate fairly large differences, but do not compare to the severity of the discrepancies found for the Netherlands and the United Arab Emirates. 
+                            Additionally, inconsistencies in the countries included in the visualisation were determined. HowMuch includes Portugal in their visualisation with a reported value of $105M, while the ITC reports approximately $99.7M. However, HowMuch states that only countries with at least $100M in exports were to be included in their visualisation, and thus, Portugal should not have been included. On the contrary, Panama and Chile were both not included in the data visualisation despite the ITC having reported 2019 export values of $319M and $115M, respectively. However, there may also be a possibility that these two countries were covered by the information included at the bottom right-hand corner of the visualisation. Brazil is toward the bottom of the visualisation, and hence, due to the geographic clustering, Panama should be displayed above Brazil in Central America, and Chile should be below Brazil as part of South America.  
+                            Since the ITC Trade Map that I have been able to access for 2019 may not include exactly the same version of the data that HowMuch first accessed, it is plausible that some of the discrepancies are the consequence of changes made to the statistics after the visualisation was released. As a result, these discrepancies cannot simply be regarded as mistakes in the initial visualisation. This is especially due to the nature of this task, since the ITC database is being accessed 7 years later. However, small data changes alone are much less likely to account for the serious discrepancies for the Netherlands and the United Arab Emirates. 
+                            Since the majority of the values could be validated by the original ITC database, I am fairly confident in the general pattern of HowMuch’s data visualisation. However, the more serious discrepancies that have been found reduce my confidence in the accuracy of the individual values, and in using the visualisation for intuitive comparisons of computer device exports between countries. Therefore, when precise export values are required, the original ITC data should be reviewed, rather than trusting the data visualisation blindly. 
+
+                        </p>
+
+                        <h2>
+                            Data Quality Analysis
+                        </h2>
+
+                        <p>
+                            The International Trade Center (ITC) Trade Map is regarded as a highly reputable source, where its annual trade statistics are mostly derived from UN Comtrade data, with additional national sources added as required. However, reporting errors, omissions or variations in reporting standards across nations may be present within the data itself. Additionally, re-exports, which are products exported by a nation that were not always made there, may also be included in the export statistics (Bustos et al., 2025). Hence, the statistics themselves may be slightly skewed. Notably, the statistics on the ITC databases are subject to small changes as necessary, so the audience must consider these changes. However, due to the affiliation with the World Trade Organisation (WTO) and the United Nations (UN), I believe the ITC to be a high quality, and reputable, data source. 
+                        </p>
                     </div>
 
 
