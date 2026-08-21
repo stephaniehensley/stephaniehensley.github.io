@@ -1637,3 +1637,65 @@ h2:not(:first-child) {
     margin-top: auto;
     padding-top: 26px;
 }
+
+/* =========================================
+   EXERCISE TABLES
+   ========================================= */
+
+.table-wrapper {
+    width: 100%;
+    margin: 35px 0 45px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.exercise-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    text-align: left;
+}
+
+.exercise-table th {
+    padding: 20px 22px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: rgba(98, 212, 255, 0.06);
+
+    color: #62d4ff;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.exercise-table td {
+    padding: 18px 22px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+}
+
+.exercise-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.exercise-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.exercise-table tbody tr:hover {
+    background: rgba(98, 212, 255, 0.035);
+}
