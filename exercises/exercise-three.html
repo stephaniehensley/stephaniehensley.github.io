@@ -100,7 +100,7 @@
                         </p>
 
                         <h2>
-                            variables
+                            Variables
                         </h2>
 
                         <div class="table-wrapper">
@@ -134,6 +134,7 @@
                             <b>1. Country</b> <br>
                             As summarised in Table 1, country is a categorical variable with no unit of measurement. Additionally, it is measured at the nominal level since they are distinct categories, and there are no rankings or intervals between the countries themselves. <br>
                             This is visually encoded using the country’s respective silhouette, and their accompanying labels. There is also some regional clustering in terms of continents; i.e. European countries are kept in a similar position to where they would appear on a typical map. <br>
+                            <br>
                             <b>2. Computer Device Export Value</b> <br>
                             As summarised in Table 1, computer device export value is a quantitative variable measured in US dollars and is displayed on the visualisation as either in millions or billions of dollars. Additionally, it is measured at the ratio level since there is an absolute zero point; i.e. no computer device exports would result in a value of $0, and meaningful ratios can be calculated between the values. Since it is measured at a ratio level, the computer device export value is continuous since these values could theoretically be infinite within some given range. <br>
                             The export value of computer devices per country is visually encoded in multiple ways. Firstly, the most prominent technique regards the area/size of the country; the larger the country, the higher the export value. For instance, evidence of this can be seen by a comparison of China against Brazil, where there is a very significant size difference due to their varying export value. Secondly, another obvious visual encoding of this export value is through the use of labels for each country, clearly stating the export value in USD. Lastly, a comparatively less prominent method is the colour of each country, as evident using the legend toward the bottom-middle of the data visualisation. <br>
@@ -153,7 +154,7 @@
                         </h2>
 
                         <p>
-                            The values represented in the HowMuch visualisation were compared with the 2019 export data for HS code 8471 obtained from the International Trade Center (ITC) Trade Map database, as referenced below. The large majority of the values shown in the visualisation could be verified against the source data; minor discrepancies were mostly caused by HowMuch rounding export quantities to the closest million or billion USD. For instance, Canada’s export value was presented as $2B, while the ITC database reports that the value was $1.6B, which frankly is a large amount of money to be rounding upwards. Similarly, Mexico was presented as $32B, while the ITC database reports ~$32.3B. However, these were not the main concerns regarding this data visualisation. Table 2, below, summarises the largest discrepancies found by comparison of the data: <br>
+                            The values represented in the HowMuch visualisation were compared with the 2019 export data for HS code 8471 obtained from the International Trade Center (ITC) Trade Map database. The large majority of the values shown in the visualisation could be verified against the source data; minor discrepancies were mostly caused by HowMuch rounding export quantities to the closest million or billion USD. For instance, Canada’s export value was presented as $2B, while the ITC database reports that the value was $1.6B, which frankly is a large amount of money to be rounding upwards. Similarly, Mexico was presented as $32B, while the ITC database reports ~$32.3B. However, these were not the main concerns regarding this data visualisation. Table 2, below, summarises the largest discrepancies found by comparison of the data: <br>
                         </p>
 
                         <div class="table-wrapper">
@@ -216,9 +217,9 @@
                         </div>
 
                         <p>
-                            As presented in Table 2, it is clear that two serious discrepancies have been found regarding the Netherlands and the United Arab Emirates. Netherlands is reported by HowMuch as having $28 billion in exports, whereas the 2019 ITC data reports approximately $11 billion. Similarly, the United Arab Emirates is shown by HowMuch as exporting only $132 million, while the ITC reports approximately $4.34 billion. These discrepancies are far too serious to be attributed to rounding errors, and HowMuch therefore misrepresents the importance of these countries in the data visualisation. Israel, Lithuania, Indonesia and Bulgaria also demonstrate fairly large differences, but do not compare to the severity of the discrepancies found for the Netherlands and the United Arab Emirates. 
-                            Additionally, inconsistencies in the countries included in the visualisation were determined. HowMuch includes Portugal in their visualisation with a reported value of $105M, while the ITC reports approximately $99.7M. However, HowMuch states that only countries with at least $100M in exports were to be included in their visualisation, and thus, Portugal should not have been included. On the contrary, Panama and Chile were both not included in the data visualisation despite the ITC having reported 2019 export values of $319M and $115M, respectively. However, there may also be a possibility that these two countries were covered by the information included at the bottom right-hand corner of the visualisation. Brazil is toward the bottom of the visualisation, and hence, due to the geographic clustering, Panama should be displayed above Brazil in Central America, and Chile should be below Brazil as part of South America.  
-                            Since the ITC Trade Map that I have been able to access for 2019 may not include exactly the same version of the data that HowMuch first accessed, it is plausible that some of the discrepancies are the consequence of changes made to the statistics after the visualisation was released. As a result, these discrepancies cannot simply be regarded as mistakes in the initial visualisation. This is especially due to the nature of this task, since the ITC database is being accessed 7 years later. However, small data changes alone are much less likely to account for the serious discrepancies for the Netherlands and the United Arab Emirates. 
+                            As presented in Table 2, it is clear that two serious discrepancies have been found regarding the Netherlands and the United Arab Emirates. Netherlands is reported by HowMuch as having $28 billion in exports, whereas the 2019 ITC data reports approximately $11 billion. Similarly, the United Arab Emirates is shown by HowMuch as exporting only $132 million, while the ITC reports approximately $4.34 billion. These discrepancies are far too serious to be attributed to rounding errors, and HowMuch therefore misrepresents the importance of these countries in the data visualisation. Israel, Lithuania, Indonesia and Bulgaria also demonstrate fairly large differences, but do not compare to the severity of the discrepancies found for the Netherlands and the United Arab Emirates. <br>
+                            Additionally, inconsistencies in the countries included in the visualisation were determined. HowMuch includes Portugal in their visualisation with a reported value of $105M, while the ITC reports approximately $99.7M. However, HowMuch states that only countries with at least $100M in exports were to be included in their visualisation, and thus, Portugal should not have been included. On the contrary, Panama and Chile were both not included in the data visualisation despite the ITC having reported 2019 export values of $319M and $115M, respectively. However, there may also be a possibility that these two countries were covered by the information included at the bottom right-hand corner of the visualisation. Brazil is toward the bottom of the visualisation, and hence, due to the geographic clustering, Panama should be displayed above Brazil in Central America, and Chile should be below Brazil as part of South America.  <br>
+                            Since the ITC Trade Map that I have been able to access for 2019 may not include exactly the same version of the data that HowMuch first accessed, it is plausible that some of the discrepancies are the consequence of changes made to the statistics after the visualisation was released. As a result, these discrepancies cannot simply be regarded as mistakes in the initial visualisation. This is especially due to the nature of this task, since the ITC database is being accessed 7 years later. However, small data changes alone are much less likely to account for the serious discrepancies for the Netherlands and the United Arab Emirates. <br>
                             Since the majority of the values could be validated by the original ITC database, I am fairly confident in the general pattern of HowMuch’s data visualisation. However, the more serious discrepancies that have been found reduce my confidence in the accuracy of the individual values, and in using the visualisation for intuitive comparisons of computer device exports between countries. Therefore, when precise export values are required, the original ITC data should be reviewed, rather than trusting the data visualisation blindly. 
 
                         </p>
@@ -258,13 +259,28 @@
                             <div>
                                 <dt>References</dt>
                                 <dd>
-                                    Wendler D. (2024, July 4) Every meteorite we saw falling down to earth, Datawrapper. 
-                                    
+                                    Irena. (2020, August 17) Visualizing the International Market for Computer Device Exports, HowMuch. 
                                     <a
-                                        href="https://www.datawrapper.de/blog/meteorite-recorded-history"
+                                        href="https://howmuch.net/articles/computer-devices-exports-by-country
+                                    "
                                     >
-                                        https://www.datawrapper.de/blog/meteorite-recorded-history
+                                        https://howmuch.net/articles/computer-devices-exports-by-country
                                     </a>
+
+                                    International Trade Centre (n.d.) Trade Map: Trade intelligence for business and policy development [Data set]. Retrieved August 21, 2026, from 
+                                    <a
+                                        href="https://www.trademap.org/en/goods/time-series/exports/c/000/c/000/p/8471/byCountry/year/2019-2019/direct/values/USD/lines"
+                                    >
+                                        https://www.trademap.org/en/goods/time-series/exports/c/000/c/000/p/8471/byCountry/year/2019-2019/direct/values/USD/lines
+                                    </a>
+
+                                    Bustos, S., Jackson, E., Torun, D., Leonard, B., Tuzcu, N., Lukaszuk, P., White, A., Hausmann, R., & Yildirim, M.A. (2025). Tackling Discrepancies in Trade Data: The Harvard Growth Lab International Trade Datasets, Growth Lab Working Paper, John F. Kennedy School of Government, Harvard University. 
+                                    <a
+                                        href="https://growthlab.hks.harvard.edu/sites/projects.iq.harvard.edu/files/2025-07-glwp-251-tackling-discrepancies-in-trade-data.pdf"
+                                    >
+                                        https://growthlab.hks.harvard.edu/sites/projects.iq.harvard.edu/files/2025-07-glwp-251-tackling-discrepancies-in-trade-data.pdf
+                                    </a>
+
                                 </dd>
                             </div>
                         </dl>
