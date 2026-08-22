@@ -1699,3 +1699,12 @@ h2:not(:first-child) {
 .exercise-table tbody tr:hover {
     background: rgba(98, 212, 255, 0.035);
 }
+
+.skill-stars {
+    white-space: nowrap;
+
+    color: var(--accent-blue);
+
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+}
