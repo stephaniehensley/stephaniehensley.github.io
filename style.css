@@ -1947,3 +1947,51 @@ h2:not(:first-child) {
 .datacamp-evidence a:hover {
     text-decoration: underline;
 }
+
+/* =========================================
+   MODULE 5 DATA CARD
+   ========================================= */
+
+.data-card-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.data-card-table th {
+    width: 150px;
+
+    color: var(--accent-blue);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    vertical-align: top;
+}
+
+.data-card-table td {
+    line-height: 1.7;
+    vertical-align: top;
+}
+
+.data-card-table ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.data-card-table li {
+    margin-bottom: 12px;
+}
+
+.data-card-table li:last-child {
+    margin-bottom: 0;
+}
+
+.data-card-table a {
+    color: var(--accent-blue);
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
