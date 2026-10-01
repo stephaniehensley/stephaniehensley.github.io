@@ -2173,3 +2173,131 @@ h2:not(:first-child) {
 .exercise-card:hover .preview-six img {
     transform: scale(1.03);
 }
+
+/* =========================================
+   MODULE 7
+   ========================================= */
+
+.module-seven-figure {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 35px auto 75px;
+}
+
+
+.module-seven-figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    cursor: zoom-in;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.module-seven-figure img:hover {
+    transform: scale(1.01);
+
+    border-color: rgba(98, 212, 255, 0.45);
+}
+
+
+.module-seven-figure figcaption {
+    margin-top: 14px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+
+/* Notes explaining changes */
+
+.module-seven-notes {
+    margin: 28px 0 35px;
+    padding: 26px 30px;
+
+    border-left: 3px solid var(--accent-blue);
+    border-radius: 0 16px 16px 0;
+
+    background: rgba(98, 212, 255, 0.045);
+}
+
+
+.module-seven-notes ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+.module-seven-notes li {
+    margin-bottom: 12px;
+
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+
+.module-seven-notes li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Make the final multivariate visualisation
+   slightly more prominent */
+
+.multivariate-figure {
+    margin-top: 40px;
+    margin-bottom: 85px;
+}
+
+
+/* Data card subsection headings */
+
+.data-card-table h4 {
+    margin: 20px 0 10px;
+
+    color: var(--text-primary);
+
+    font-size: 0.9rem;
+}
+
+
+.data-card-table h4:first-child {
+    margin-top: 0;
+}
+
+/* =========================================
+   MODULE 7 HOMEPAGE CARD
+   ========================================= */
+
+.preview-seven {
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-seven img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.exercise-card:hover .preview-seven img {
+    transform: scale(1.03);
+}

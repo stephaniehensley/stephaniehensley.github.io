@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Module 7 portfolio exercise by Stephanie Hensley."
+    >
+
+    <title>
+        Module 7 Exercise | Stephanie Hensley
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header>
+
+        <nav class="container">
+
+            <a class="logo" href="../index.html">
+                SH<span>.</span>
+            </a>
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#exercises">
+                        Exercises
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="exercise-page">
+
+
+        <!-- =========================
+             HERO
+             ========================= -->
+
+        <section class="exercise-hero">
+
+            <div class="container">
+
+                <a
+                    class="back-link"
+                    href="../index.html#exercises"
+                >
+                    ← Back to portfolio
+                </a>
+
+                <p class="eyebrow">
+                    Exercise 07
+                </p>
+
+                <h1>
+                    Make it Multivariate!
+                </h1>
+
+                <p class="exercise-introduction">
+                    Extending an existing data visualisation by adding
+                    population as an additional variable to explore political
+                    dissatisfaction, GDP per capita and population across
+                    25 countries.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN EXERCISE SECTION
+             ========================= -->
+
+        <section class="exercise-section">
+
+            <div class="container">
+
+                <div class="exercise-page-grid">
+
+
+                    <!-- =========================
+                         LEFT COLUMN
+                         ========================= -->
+
+                    <div class="exercise-main-content">
+
+
+                        <!-- =========================
+                             EXERCISE SUMMARY
+                             ========================= -->
+
+                        <h2>
+                            Exercise Summary
+                        </h2>
+
+                        <p>
+                            For this exercise, I selected an existing data
+                            visualisation from Pew Research Center and extended
+                            it into a multivariate visualisation. The original
+                            visualisation compared GDP per capita with the
+                            percentage of adults across 25 countries who said
+                            that their political system needed major changes
+                            or complete reform.
+                        </p>
+
+                        <p>
+                            I first reproduced the original visualisation in
+                            Python while making several accessibility and
+                            publication-readiness improvements. I then added
+                            population as an additional variable using data
+                            from the United Nations World Population Prospects
+                            2024 dataset. Population is represented through
+                            bubble size, allowing the visualisation to display
+                            political-system dissatisfaction, GDP per capita
+                            and population simultaneously.
+                        </p>
+
+
+                        <!-- =========================
+                             ORIGINAL VISUALISATION
+                             ========================= -->
+
+                        <h2>
+                            Original Visualisation
+                        </h2>
+
+                        <p>
+                            The original visualisation was published by Pew
+                            Research Center and compares GDP per capita with
+                            the percentage of adults who say that their
+                            political system needs major changes or complete
+                            reform across 25 countries.
+                        </p>
+
+                        <figure class="exercise-figure module-seven-figure">
+
+                            <img
+                                class="lightbox-image"
+                                src="../images/module-seven-original.png"
+                                alt="Original Pew Research Center visualisation comparing GDP per capita and dissatisfaction with political systems"
+                            >
+
+                            <figcaption>
+                                <strong>Figure 1.</strong>
+                                ‘U.S. stands out among high-income nations
+                                for unhappiness with political system’
+                                (Pew Research Center, 2026).
+                            </figcaption>
+
+                        </figure>
+
+
+                        <!-- =========================
+                             MY REPRODUCTION
+                             ========================= -->
+
+                        <h2>
+                            My Reproduction
+                        </h2>
+
+                        <p>
+                            Before adding another variable, I reproduced the
+                            original visualisation in Python. During this
+                            process, I also made several changes to improve
+                            its accessibility and presentation.
+                        </p>
+
+                        <div class="module-seven-notes">
+
+                            <ul>
+
+                                <li>
+                                    I made the text colour darker to ensure
+                                    a 4.5:1 text-to-background contrast ratio.
+                                </li>
+
+                                <li>
+                                    I made the bubble colours darker to ensure
+                                    a 3:1 element-to-background contrast ratio.
+                                </li>
+
+                                <li>
+                                    I made minor grammatical improvements to
+                                    ensure the title and subtitle are both
+                                    proper sentences.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <figure class="exercise-figure module-seven-figure">
+
+                            <img
+                                class="lightbox-image"
+                                src="../images/module-seven-reproduction.png"
+                                alt="My reproduction of the Pew Research Center political system visualisation"
+                            >
+
+                            <figcaption>
+                                <strong>Figure 2.</strong>
+                                My reproduction of the Pew Research Center
+                                visualisation.
+                            </figcaption>
+
+                        </figure>
+
+
+                        <!-- =========================
+                             MULTIVARIATE VISUALISATION
+                             ========================= -->
+
+                        <h2>
+                            Make it Multivariate!
+                        </h2>
+
+                        <p>
+                            To make the visualisation multivariate, I added
+                            population as an additional variable. The population
+                            of each country is represented by the size of its
+                            bubble, allowing population to be considered
+                            alongside GDP per capita and dissatisfaction with
+                            the political system.
+                        </p>
+
+                        <div class="module-seven-notes">
+
+                            <ul>
+
+                                <li>
+                                    I made the text colour darker to ensure
+                                    a 4.5:1 text-to-background contrast ratio.
+                                </li>
+
+                                <li>
+                                    I made the bubble colours darker to ensure
+                                    a 3:1 element-to-background contrast ratio.
+                                </li>
+
+                                <li>
+                                    I made minor grammatical improvements to
+                                    ensure the title and subtitle are both
+                                    proper sentences.
+                                </li>
+
+                                <li>
+                                    The bubbles are sized in relation to each
+                                    country's population size, as to perhaps
+                                    reveal a relationship between population
+                                    size and unhappiness with the political
+                                    system.
+                                </li>
+
+                                <li>
+                                    A legend for bubble size was added in the
+                                    bottom-left corner.
+                                </li>
+
+                                <li>
+                                    I added the United Nations World Population
+                                    Prospects 2024 to the source information
+                                    because its population data were incorporated
+                                    into the visualisation.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <figure class="exercise-figure module-seven-figure multivariate-figure">
+
+                            <img
+                                class="lightbox-image"
+                                src="../images/module-seven-multivariate.png"
+                                alt="Multivariate bubble chart comparing political-system dissatisfaction, GDP per capita and population across 25 countries"
+                            >
+
+                            <figcaption>
+                                <strong>Figure 3.</strong>
+                                My multivariate recreation incorporating
+                                population as an additional variable through
+                                bubble size.
+                            </figcaption>
+
+                        </figure>
+
+
+                        <!-- =========================
+                             DATA CARD
+                             ========================= -->
+
+                        <h2>
+                            Data Card
+                        </h2>
+
+                        <p>
+                            The following data card summarises the data,
+                            sources and visual mappings used to create my
+                            multivariate visualisation.
+                        </p>
+
+
+                        <div class="table-wrapper">
+
+                            <table class="exercise-table data-card-table">
+
+                                <tbody>
+
+
+                                    <!-- TITLE -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Title
+                                        </th>
+
+                                        <td>
+
+                                            <strong>
+                                                U.S. stands out among
+                                                high-income nations for
+                                                unhappiness with political
+                                                system.
+                                            </strong>
+
+                                            <br><br>
+
+                                            % who say their political system
+                                            needs major changes or complete
+                                            reform.
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- SUMMARY -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Summary
+                                        </th>
+
+                                        <td>
+
+                                            <p>
+                                                This multivariate visualisation
+                                                shows the comparison of
+                                                unhappiness towards political
+                                                systems, GDP per capita, and
+                                                population across 25 countries.
+                                                Each country is represented by
+                                                a bubble sized by its population
+                                                and is directly labelled, and a
+                                                trend line is included to show
+                                                the relationship between GDP per
+                                                capita and unhappiness towards
+                                                political systems across the
+                                                displayed countries.
+                                            </p>
+
+                                            <p>
+                                                The visualisation was inspired
+                                                by Pew Research Center’s
+                                                ‘U.S. stands out among
+                                                high-income nations for
+                                                unhappiness with political
+                                                system’, and it was extended
+                                                into a multivariate design by
+                                                including population data from
+                                                the United Nations World
+                                                Population Prospects
+                                                (2024 Revision).
+                                            </p>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- DATA SOURCE -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Data Source
+                                        </th>
+
+                                        <td>
+
+                                            <p>
+                                                Pew Research Center.
+                                                (2026, March 7).
+                                                <em>
+                                                    U.S. stands out among
+                                                    high-income nations for
+                                                    unhappiness with political
+                                                    system
+                                                </em>
+                                                [Data set].
+
+                                                <a
+                                                    href="https://www.pewresearch.org/chart/__trashed-17/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://www.pewresearch.org/chart/__trashed-17/
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                Pew Research Center. (2025).
+                                                <em>
+                                                    Spring 2025 Survey Data
+                                                </em>
+                                                [Data set].
+
+                                                <a
+                                                    href="https://www.pewresearch.org/dataset/spring-2025-survey-data/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://www.pewresearch.org/dataset/spring-2025-survey-data/
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                United Nations, Department of
+                                                Economic and Social Affairs,
+                                                Population Division. (2024).
+                                                <em>
+                                                    World Population Prospects
+                                                    2024
+                                                </em>
+                                                [Data set].
+
+                                                <a
+                                                    href="https://population.un.org/wpp/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://population.un.org/wpp/
+                                                </a>
+                                            </p>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- MAPPING -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Mapping
+                                        </th>
+
+                                        <td>
+
+                                            <ul>
+
+                                                <li>
+                                                    <strong>X-axis:</strong>
+                                                    GDP per capita, in USD,
+                                                    for each of the 25 countries.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Y-axis:</strong>
+                                                    Percentage of adults in
+                                                    each country who say their
+                                                    political system needs major
+                                                    changes or complete reform.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Bubble Size:</strong>
+                                                    Population of each country
+                                                    in millions. The larger
+                                                    bubbles represent countries
+                                                    with larger populations,
+                                                    while smaller bubbles
+                                                    represent countries with
+                                                    smaller populations.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Colour:</strong>
+                                                    The U.S. is highlighted in
+                                                    blue, while the remaining
+                                                    countries are coloured grey,
+                                                    since Pew Research Center’s
+                                                    original visualisation had
+                                                    emphasis on the U.S.
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- IMPORTANT NOTES -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Important Notes
+                                        </th>
+
+                                        <td>
+
+                                            <h4>
+                                                Pew Research Center
+                                            </h4>
+
+                                            <ul>
+
+                                                <li>
+                                                    The political attitudes data
+                                                    are based on Pew Research
+                                                    Center’s Spring 2025 Global
+                                                    Attitudes Survey, which
+                                                    surveyed 31,938 adults
+                                                    across 25 countries.
+                                                </li>
+
+                                                <li>
+                                                    The survey results represent
+                                                    public views rather than
+                                                    objective measurements of
+                                                    the performance of each
+                                                    country's political system.
+                                                </li>
+
+                                                <li>
+                                                    GDP per capita is expressed
+                                                    in USD.
+                                                </li>
+
+                                                <li>
+                                                    The GDP values used in the
+                                                    original data visualisation
+                                                    were sourced from the World
+                                                    Bank and accessed by Pew
+                                                    Research Center on
+                                                    March 23, 2026.
+                                                </li>
+
+                                                <li>
+                                                    The trend line does not
+                                                    display a causal relationship
+                                                    between GDP per capita and
+                                                    unhappiness towards political
+                                                    systems.
+                                                </li>
+
+                                            </ul>
+
+
+                                            <h4>
+                                                United Nations
+                                            </h4>
+
+                                            <ul>
+
+                                                <li>
+                                                    The UN states that the 2024
+                                                    Revision contains population
+                                                    estimates informed by
+                                                    censuses, registration
+                                                    systems and nationally
+                                                    representative surveys.
+                                                </li>
+
+                                                <li>
+                                                    The populations for
+                                                    January 1, 2026 are used.
+                                                </li>
+
+                                                <li>
+                                                    The dataset used is a
+                                                    Standard Projection in
+                                                    CSV format.
+                                                </li>
+
+                                                <li>
+                                                    The dataset has been cleaned
+                                                    to include only the 25
+                                                    countries used and to
+                                                    convert the population from
+                                                    thousands into millions.
+                                                </li>
+
+                                                <li>
+                                                    The bubble sizes have been
+                                                    scaled by a factor of
+                                                    1.5 million.
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- ACCESS -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Access
+                                        </th>
+
+                                        <td>
+
+                                            <ul>
+
+                                                <li>
+                                                    You can access the political
+                                                    system and GDP per capita
+                                                    data used in Pew Research
+                                                    Center’s original
+                                                    visualisation via the
+                                                    ‘U.S. stands out among
+                                                    high-income nations for
+                                                    unhappiness with political
+                                                    system’ page and it can be
+                                                    downloaded as a CSV file.
+                                                </li>
+
+                                                <li>
+                                                    The full survey data can
+                                                    also be accessed through
+                                                    Pew Research Center’s
+                                                    ‘Spring 2025 Survey Data’
+                                                    dataset, but a free account
+                                                    on the Pew Research Center
+                                                    website is required for
+                                                    download.
+                                                </li>
+
+                                                <li>
+                                                    You can access the United
+                                                    Nations ‘World Population
+                                                    Prospects 2024’ in several
+                                                    formats, including CSV.
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+
+                    </div>
+                    <!-- END LEFT COLUMN -->
+
+
+                    <!-- =========================
+                         RIGHT SIDEBAR
+                         ========================= -->
+
+                    <aside class="exercise-details">
+
+                        <p class="details-label">
+                            Exercise details
+                        </p>
+
+                        <dl>
+
+
+                            <div>
+
+                                <dt>
+                                    Course
+                                </dt>
+
+                                <dd>
+                                    Data Visualisation with R
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Module
+                                </dt>
+
+                                <dd>
+                                    Module 7
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Completed
+                                </dt>
+
+                                <dd>
+                                    September 2026
+                                </dd>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 REFERENCES
+                                 ========================= -->
+
+                            <div>
+
+                                <dt>
+                                    References
+                                </dt>
+
+                                <dd class="references">
+
+
+                                    <p>
+                                        Pew Research Center.
+                                        (2026, March 7).
+                                        <em>
+                                            U.S. stands out among
+                                            high-income nations for
+                                            unhappiness with political system.
+                                        </em>
+
+                                        <a
+                                            href="https://www.pewresearch.org/chart/__trashed-17/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://www.pewresearch.org/chart/__trashed-17/
+                                        </a>
+                                    </p>
+
+
+                                    <p>
+                                        Pew Research Center.
+                                        (2026, March 7).
+                                        <em>
+                                            U.S. stands out among
+                                            high-income nations for
+                                            unhappiness with political system
+                                        </em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://www.pewresearch.org/chart/__trashed-17/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://www.pewresearch.org/chart/__trashed-17/
+                                        </a>
+                                    </p>
+
+
+                                    <p>
+                                        Pew Research Center. (2025).
+                                        <em>
+                                            Spring 2025 Survey Data
+                                        </em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://www.pewresearch.org/dataset/spring-2025-survey-data/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://www.pewresearch.org/dataset/spring-2025-survey-data/
+                                        </a>
+                                    </p>
+
+
+                                    <p>
+                                        United Nations, Department of
+                                        Economic and Social Affairs,
+                                        Population Division. (2024).
+                                        <em>
+                                            World Population Prospects 2024
+                                        </em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://population.un.org/wpp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://population.un.org/wpp/
+                                        </a>
+                                    </p>
+
+
+                                </dd>
+
+                            </div>
+
+                        </dl>
+
+                    </aside>
+                    <!-- END SIDEBAR -->
+
+
+                </div>
+                <!-- END GRID -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Stephanie Hensley
+            </p>
+
+            <p>
+                Course Portfolio
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         LIGHTBOX
+         ========================= -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged image"
+    >
+
+        <button
+            id="lightbox-close"
+            class="lightbox-close"
+            type="button"
+            aria-label="Close enlarged image"
+        >
+            &times;
+        </button>
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
