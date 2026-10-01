@@ -2301,3 +2301,106 @@ h2:not(:first-child) {
 .exercise-card:hover .preview-seven img {
     transform: scale(1.03);
 }
+
+/* =========================================
+   MODULE 8
+   ========================================= */
+
+.module-eight-figure {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 35px auto 75px;
+}
+
+
+.module-eight-figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    cursor: zoom-in;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.module-eight-figure img:hover {
+    transform: scale(1.01);
+
+    border-color: rgba(98, 212, 255, 0.45);
+}
+
+
+.module-eight-figure figcaption {
+    margin-top: 14px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+
+/* Visualisation approach */
+
+.module-eight-notes {
+    margin: 28px 0 75px;
+    padding: 26px 30px;
+
+    border-left: 3px solid var(--accent-blue);
+    border-radius: 0 16px 16px 0;
+
+    background: rgba(98, 212, 255, 0.045);
+}
+
+
+.module-eight-notes ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+.module-eight-notes li {
+    margin-bottom: 12px;
+
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+
+.module-eight-notes li:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   MODULE 8 HOMEPAGE CARD
+   ========================================= */
+
+.preview-eight {
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-eight img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.exercise-card:hover .preview-eight img {
+    transform: scale(1.03);
+}

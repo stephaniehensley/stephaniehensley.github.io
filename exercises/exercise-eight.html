@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Module 8 portfolio exercise by Stephanie Hensley."
+    >
+
+    <title>
+        Module 8 Exercise | Stephanie Hensley
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header>
+
+        <nav class="container">
+
+            <a class="logo" href="../index.html">
+                SH<span>.</span>
+            </a>
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#exercises">
+                        Exercises
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="exercise-page">
+
+
+        <!-- =========================
+             HERO
+             ========================= -->
+
+        <section class="exercise-hero">
+
+            <div class="container">
+
+                <a
+                    class="back-link"
+                    href="../index.html#exercises"
+                >
+                    ← Back to portfolio
+                </a>
+
+                <p class="eyebrow">
+                    Exercise 08
+                </p>
+
+                <h1>
+                    Map It!
+                </h1>
+
+                <p class="exercise-introduction">
+                    Exploring the global distribution of recorded
+                    meteorites through an interactive spatial
+                    data visualisation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN EXERCISE SECTION
+             ========================= -->
+
+        <section class="exercise-section">
+
+            <div class="container">
+
+                <div class="exercise-page-grid">
+
+
+                    <!-- =========================
+                         LEFT COLUMN
+                         ========================= -->
+
+                    <div class="exercise-main-content">
+
+
+                        <!-- =========================
+                             EXERCISE SUMMARY
+                             ========================= -->
+
+                        <h2>
+                            Exercise Summary
+                        </h2>
+
+                        <p>
+                            For this exercise, I investigated the relationship
+                            between recorded meteorites and their geographic
+                            position using spatial data from NASA's
+                            Meteorite Landings dataset.
+                        </p>
+
+                        <p>
+                            I chose to create a proportional symbol, or bubble,
+                            map to display the global distribution of recorded
+                            meteorites. Each meteorite is positioned according
+                            to its recorded latitude and longitude, while
+                            additional visual encodings are used to communicate
+                            when the meteorite was recorded and its mass.
+                        </p>
+
+                        <p>
+                            To make the visualisation easier to interpret,
+                            recorded years were grouped into six broader time
+                            periods and represented using colour. Marker size
+                            was used to represent meteorite mass, with a
+                            logarithmic scale allowing the large range of
+                            recorded masses to be displayed more effectively.
+                        </p>
+
+
+                        <!-- =========================
+                             SPATIAL VISUALISATION
+                             ========================= -->
+
+                        <h2>
+                            Recorded Meteorites Around the World
+                        </h2>
+
+                        <p>
+                            The resulting spatial visualisation shows the
+                            geographic distribution of meteorite records
+                            contained within the dataset. Colour represents
+                            the time period in which each meteorite was
+                            recorded, while larger circles represent
+                            meteorites with greater recorded mass.
+                        </p>
+
+
+                        <figure class="exercise-figure module-eight-figure">
+
+                            <img
+                                class="lightbox-image"
+                                src="../images/module-eight-meteorite-map.png"
+                                alt="World map showing recorded meteorites by geographic position, time period and mass"
+                            >
+
+                            <figcaption>
+                                <strong>Figure 1.</strong>
+                                Recorded meteorites around the world,
+                                visualised by geographic position, recorded
+                                time period and mass using data from NASA's
+                                Meteorite Landings dataset.
+                            </figcaption>
+
+                        </figure>
+
+
+                        <!-- =========================
+                             DESIGN APPROACH
+                             ========================= -->
+
+                        <h2>
+                            Visualisation Approach
+                        </h2>
+
+                        <div class="module-eight-notes">
+
+                            <ul>
+
+                                <li>
+                                    Each meteorite is positioned according to
+                                    its recorded latitude and longitude.
+                                </li>
+
+                                <li>
+                                    Colour represents the recorded time period,
+                                    grouped into six ordinal categories ranging
+                                    from Before 1800 to 2000 Onwards.
+                                </li>
+
+                                <li>
+                                    Marker size represents the recorded mass
+                                    of each meteorite using a logarithmic scale.
+                                </li>
+
+                                <li>
+                                    Larger circles therefore represent
+                                    meteorites with greater recorded masses,
+                                    while smaller circles represent meteorites
+                                    with smaller recorded masses.
+                                </li>
+
+                                <li>
+                                    Records with missing latitude, longitude,
+                                    year or mass values were excluded from
+                                    the visualisation.
+                                </li>
+
+                                <li>
+                                    Records located at 0° latitude and
+                                    0° longitude were also excluded because
+                                    a large number of records contained these
+                                    coordinates.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!-- =========================
+                             DATA CARD
+                             ========================= -->
+
+                        <h2>
+                            Data Card
+                        </h2>
+
+                        <p>
+                            The following data card summarises the dataset,
+                            visual mappings and important considerations for
+                            interpreting the spatial visualisation.
+                        </p>
+
+
+                        <div class="table-wrapper">
+
+                            <table class="exercise-table data-card-table">
+
+                                <tbody>
+
+
+                                    <!-- TITLE -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Title
+                                        </th>
+
+                                        <td>
+
+                                            <strong>
+                                                Recorded Meteorites Around
+                                                the World
+                                            </strong>
+
+                                            <br><br>
+
+                                            Colour shows the recorded time
+                                            period, while larger circles
+                                            represent meteorites with
+                                            greater mass.
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- SUMMARY -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Summary
+                                        </th>
+
+                                        <td>
+
+                                            <p>
+                                                The spatial visualisation shows
+                                                the global distribution of
+                                                recorded meteorites around the
+                                                world using data from NASA's
+                                                ‘Meteorite Landings’ dataset,
+                                                sourced from The Meteoritical
+                                                Society.
+                                            </p>
+
+                                            <p>
+                                                Each marker represents an
+                                                individual meteorite record
+                                                and is located at its
+                                                corresponding latitude and
+                                                longitude. The colour
+                                                represents the time period in
+                                                which the meteorite was
+                                                recorded, ranging from
+                                                Before 1800 to 2000 Onwards,
+                                                and the marker size represents
+                                                its mass.
+                                            </p>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- DATA SOURCE -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Data Source
+                                        </th>
+
+                                        <td>
+
+                                            <p>
+                                                National Aeronautics and Space
+                                                Administration (NASA).
+                                                (2025, May 30).
+                                                <em>
+                                                    Meteorite Landings
+                                                </em>
+                                                [Data set].
+                                                NASA Open Data Portal.
+                                                Accessed September 30, 2026.
+
+                                                <a
+                                                    href="https://data.nasa.gov/dataset/meteorite-landings"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://data.nasa.gov/dataset/meteorite-landings
+                                                </a>
+                                            </p>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- MAPPING -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Mapping
+                                        </th>
+
+                                        <td>
+
+                                            <ul>
+
+                                                <li>
+                                                    <strong>
+                                                        Geographic Position:
+                                                    </strong>
+
+                                                    Each marker is positioned
+                                                    using the recorded latitude
+                                                    and longitude of the
+                                                    meteorite.
+                                                </li>
+
+                                                <li>
+                                                    <strong>
+                                                        Colour:
+                                                    </strong>
+
+                                                    The recorded time period
+                                                    of each meteorite. These
+                                                    are grouped into six
+                                                    ordinal categories:
+                                                    Before 1800, 1800–1849,
+                                                    1850–1899, 1900–1949,
+                                                    1950–1999, and
+                                                    2000 Onwards.
+                                                </li>
+
+                                                <li>
+                                                    <strong>
+                                                        Marker Size:
+                                                    </strong>
+
+                                                    The recorded mass of each
+                                                    meteorite using a
+                                                    logarithmic scale; larger
+                                                    circles indicate larger
+                                                    masses, and smaller circles
+                                                    indicate smaller masses.
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- IMPORTANT NOTES -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Important Notes
+                                        </th>
+
+                                        <td>
+
+                                            <ul>
+
+                                                <li>
+                                                    The map includes recorded
+                                                    meteorites within the given
+                                                    dataset and does not show
+                                                    every meteorite that has
+                                                    ever landed on Earth.
+                                                </li>
+
+                                                <li>
+                                                    Meteorites with missing
+                                                    latitude, longitude, year
+                                                    or mass were excluded.
+                                                </li>
+
+                                                <li>
+                                                    Records located at
+                                                    (0°, 0°) were excluded,
+                                                    as there was a very large
+                                                    number of them within
+                                                    the dataset.
+                                                </li>
+
+                                                <li>
+                                                    Meteorite mass is measured
+                                                    in grams in the original
+                                                    dataset, but the legend
+                                                    displays some masses in
+                                                    kilograms to make
+                                                    differences in marker size
+                                                    easier to interpret.
+                                                </li>
+
+                                                <li>
+                                                    The marker size uses a
+                                                    logarithmic scale and is
+                                                    not directly proportional
+                                                    to the raw mass.
+                                                </li>
+
+                                                <li>
+                                                    Recorded years have been
+                                                    grouped into broader
+                                                    time periods.
+                                                </li>
+
+                                                <li>
+                                                    Clustering of meteorite
+                                                    records does not mean that
+                                                    they are more likely to
+                                                    fall in the recorded
+                                                    location. This is only
+                                                    indicative of more
+                                                    observations occurring in
+                                                    the clustering regions.
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- ACCESS -->
+
+                                    <tr>
+
+                                        <th scope="row">
+                                            Access
+                                        </th>
+
+                                        <td>
+
+                                            <p>
+                                                You can access a copy of the
+                                                data used to construct this
+                                                spatial visualisation through
+                                                NASA's Open Data Portal
+                                                ‘Meteorite Landings’ dataset.
+                                            </p>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- END LEFT COLUMN -->
+
+
+                    <!-- =========================
+                         RIGHT SIDEBAR
+                         ========================= -->
+
+                    <aside class="exercise-details">
+
+                        <p class="details-label">
+                            Exercise details
+                        </p>
+
+                        <dl>
+
+
+                            <div>
+
+                                <dt>
+                                    Course
+                                </dt>
+
+                                <dd>
+                                    Data Visualisation with R
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Module
+                                </dt>
+
+                                <dd>
+                                    Module 8
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Completed
+                                </dt>
+
+                                <dd>
+                                    September 30, 2026
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Method
+                                </dt>
+
+                                <dd>
+                                    Proportional Symbol / Bubble Map
+                                </dd>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 REFERENCES
+                                 ========================= -->
+
+                            <div>
+
+                                <dt>
+                                    References
+                                </dt>
+
+                                <dd class="references">
+
+                                    <p>
+                                        National Aeronautics and Space
+                                        Administration (NASA).
+                                        (2025, May 30).
+                                        <em>
+                                            Meteorite Landings
+                                        </em>
+                                        [Data set].
+                                        NASA Open Data Portal.
+
+                                        <a
+                                            href="https://data.nasa.gov/dataset/meteorite-landings"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://data.nasa.gov/dataset/meteorite-landings
+                                        </a>
+                                    </p>
+
+                                </dd>
+
+                            </div>
+
+                        </dl>
+
+                    </aside>
+                    <!-- END SIDEBAR -->
+
+
+                </div>
+                <!-- END GRID -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Stephanie Hensley
+            </p>
+
+            <p>
+                Course Portfolio
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         LIGHTBOX
+         ========================= -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged image"
+    >
+
+        <button
+            id="lightbox-close"
+            class="lightbox-close"
+            type="button"
+            aria-label="Close enlarged image"
+        >
+            &times;
+        </button>
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
