@@ -1995,3 +1995,181 @@ h2:not(:first-child) {
     overflow-wrap: anywhere;
     word-break: break-word;
 }
+
+/* =========================================
+   MODULE 6
+   ========================================= */
+
+
+/* Side-by-side original / improved layout */
+
+.visualisation-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+
+    margin: 28px 0 65px;
+}
+
+
+/* Reproduction / Recreation heading */
+
+.comparison-heading {
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    color: var(--text-primary);
+    font-size: 1.35rem;
+}
+
+
+/* Individual comparison cards */
+
+.comparison-figure {
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+/* Original / Improved labels */
+
+.comparison-label {
+    display: inline-block;
+
+    margin: 0 0 14px;
+    padding: 6px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 50px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.improved-label {
+    color: var(--accent-blue);
+
+    border-color: rgba(98, 212, 255, 0.35);
+    background: rgba(98, 212, 255, 0.08);
+}
+
+
+/* Images */
+
+.comparison-figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    cursor: zoom-in;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.comparison-figure img:hover {
+    transform: scale(1.015);
+
+    border-color: rgba(98, 212, 255, 0.45);
+}
+
+
+/* Captions */
+
+.comparison-figure figcaption {
+    margin-top: 14px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   REFLECTION BOXES
+   ========================================= */
+
+.module-six-reflection {
+    margin: 25px 0;
+    padding: 28px 30px;
+
+    border-left: 3px solid var(--accent-blue);
+    border-radius: 0 16px 16px 0;
+
+    background: rgba(98, 212, 255, 0.045);
+}
+
+
+.module-six-reflection h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: var(--text-primary);
+}
+
+
+.module-six-reflection ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+
+.module-six-reflection li {
+    margin-bottom: 12px;
+
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+
+.module-six-reflection li:last-child {
+    margin-bottom: 0;
+}
+
+
+.module-six-reflection ul ul {
+    margin-top: 10px;
+}
+
+/* =========================================
+   MODULE 6 HOMEPAGE CARD
+   ========================================= */
+
+.preview-six {
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-six img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.exercise-card:hover .preview-six img {
+    transform: scale(1.03);
+}
