@@ -2406,8 +2406,9 @@ h2:not(:first-child) {
 }
 
 
+
 /* =========================================
-   MODULE 9 - INTERACTIVE VISUALISATION
+   MODULE 9 - INTERACTIVE MAP
    ========================================= */
 
 .module-nine-figure {
@@ -2417,9 +2418,11 @@ h2:not(:first-child) {
 }
 
 .interactive-map-container {
+    display: block;
     position: relative;
+
     width: 100%;
-    height: 650px;
+    height: 750px;
 
     overflow: hidden;
 
@@ -2433,35 +2436,11 @@ h2:not(:first-child) {
 
 .interactive-map-container iframe {
     display: block;
+
     width: 100%;
     height: 100%;
 
     border: none;
-}
-
-.module-nine-figure figcaption {
-    margin-top: 15px;
-
-    color: var(--text-secondary);
-    font-size: 0.8rem;
-    line-height: 1.6;
-}
-
-.interactive-map-note {
-    margin: 0 0 75px;
-
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.interactive-map-note a {
-    color: var(--accent-blue);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.interactive-map-note a:hover {
-    text-decoration: underline;
 }
 
 
