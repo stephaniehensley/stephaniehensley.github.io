@@ -2768,3 +2768,29 @@ h2:not(:first-child) {
 }
 
 
+/* =========================================
+   MODULE 10 - HOMEPAGE CARD
+   ========================================= */
+
+.preview-ten {
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-ten img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.exercise-card:hover .preview-ten img {
+    transform: scale(1.03);
+}
+
+
+
