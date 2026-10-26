@@ -2894,5 +2894,21 @@ h2:not(:first-child) {
 }
 
 
+.interactive-dashboard-container iframe {
+    display: block;
+
+    position: static !important;
+
+    width: 133.33%;
+    height: 1533.33px;
+
+    margin: 0;
+    border: none;
+
+    transform: scale(0.75);
+    transform-origin: top left;
+}
+
+
 
 
