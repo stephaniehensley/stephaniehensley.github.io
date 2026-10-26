@@ -2842,5 +2842,28 @@ h2:not(:first-child) {
 }
 
 
+/* MODULE 10 - RESTORE DASHBOARD */
+
+.interactive-dashboard-container {
+    position: relative;
+    width: 100%;
+    height: 1150px;
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.interactive-dashboard-container iframe {
+    display: block;
+    width: 117.65%;
+    height: 1352.94px;
+    border: none;
+
+    transform: scale(0.85);
+    transform-origin: top left;
+}
+
 
 
