@@ -2905,7 +2905,7 @@ h2:not(:first-child) {
     margin: 0;
     border: none;
 
-    transform: scale(0.75);
+    transform: scale(0.65);
     transform-origin: top left;
 }
 
