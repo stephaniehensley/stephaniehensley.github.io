@@ -63,16 +63,16 @@
                 </a>
 
                 <p class="eyebrow">
-                    Exercise 10 · [INSERT COMPLETION DATE]
+                    Exercise 10
                 </p>
 
                 <h1>Multiplot It!</h1>
 
                 <p class="exercise-introduction">
-                    Combining complementary meteorite data
-                    visualisations into an interactive dashboard
-                    to explore recorded meteorite observations
-                    from multiple perspectives.
+                    Combining multiple individual charts into an
+                    interactive dashboard using Plotly and Quarto!
+                    This exercise expands upon the Module 7
+                    visualisaton that I made multivariate.
                 </p>
 
             </div>
@@ -88,16 +88,7 @@
 
             <div class="container">
 
-                <h2>Recorded Meteorites Around the World</h2>
-
-                <p class="module-ten-dashboard-intro">
-                    The interactive dashboard below combines multiple
-                    complementary visualisations of NASA's Meteorite
-                    Landings dataset. Building upon my earlier
-                    meteorite map, the multiplot display provides
-                    additional perspectives on the recorded data.
-                </p>
-
+                <h2>Interactive Dashboard</h2>
 
                 <figure class="module-ten-figure">
 
@@ -115,8 +106,7 @@
                     <figcaption>
                         <strong>Figure 1.</strong>
                         Interactive multiplot dashboard exploring
-                        recorded meteorites around the world
-                        using NASA's Meteorite Landings dataset.
+                        political unhappiness across 25 countries.
                     </figcaption>
 
                 </figure>
@@ -125,7 +115,7 @@
                 <p class="interactive-dashboard-note">
                     If the dashboard does not load,
                     <a
-                        href="PASTE_YOUR_POSIT_DASHBOARD_URL_HERE"
+                        href="https://01a17830-bf3b-2c80-3ac9-ea92f2eac56c.share.connect.posit.cloud/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -157,39 +147,18 @@
                         <h2>Exercise Summary</h2>
 
                         <p>
-                            [INSERT YOUR EXERCISE SUMMARY HERE]
+                            For this exercise, I created a multiplot dashboard that brings together multiple data visualisations to explore relationships between different variables. I decided to build on an existing data visualisation, by Pew Research Center, by including additional datasets and presenting this information in an interactive dashboard. I chose to investigate the Political Unhappiness across 25 countries, and more specifically, how this could potentially be related to GDP per capita, perceived corruption, and income inequality. 
                         </p>
 
 
                         <!-- DASHBOARD DESIGN -->
 
-                        <h2>Dashboard Design</h2>
+                        <h2>My Process</h2>
 
                         <p>
-                            [EXPLAIN WHICH VISUALISATIONS YOU COMBINED,
-                            WHICH NEW PLOT YOU ADDED, AND HOW THE PLOTS
-                            COMPLEMENT EACH OTHER.]
+                            I began with a visualisation from Pew Research Center than I had previously used in Module 7, and sourced data from the United Nations, Transparency International and the World Bank to introduce population, corruption, and income inequality as additional variables. Using Python, I combined all of this data into a single Dataframe, where each country has its associated % of unhappiness, population, corruption index (CPI) and gini index. After creating these charts using Plotly, I combined the three into a single interactive dashboard using Quarto.  
                         </p>
 
-
-                        <!-- INTERACTIVE DESIGN -->
-
-                        <h2>Interactive Design</h2>
-
-                        <p>
-                            [EXPLAIN THE DASHBOARD'S INTERACTIVE
-                            FEATURES AND WHY THEY WERE CHOSEN.]
-                        </p>
-
-
-                        <!-- DEVELOPMENT PROCESS -->
-
-                        <h2>Development Process</h2>
-
-                        <p>
-                            [SUMMARISE THE STEPS YOU FOLLOWED TO
-                            DEVELOP, TEST AND PUBLISH THE DASHBOARD.]
-                        </p>
 
 
                         <!-- =========================================
@@ -197,14 +166,7 @@
                              ========================================= -->
 
                         <h2>Data Card</h2>
-
-                        <p>
-                            The following data card documents the
-                            data sources, visual mappings, interactive
-                            features and important considerations
-                            associated with the dashboard.
-                        </p>
-
+                         
                         <div class="table-wrapper">
 
                             <table class="exercise-table data-card-table">
@@ -218,12 +180,13 @@
 
                                         <td>
                                             <strong>
-                                                Recorded Meteorites
-                                                Around the World
+                                                U.S. stands out among high-income nations
+                                                for unhappiness with political system.
                                             </strong>
 
                                             <p>
-                                                [INSERT DASHBOARD SUBTITLE]
+                                                % who say their political system needs
+                                                major changes or complete reform.
                                             </p>
                                         </td>
                                     </tr>
@@ -236,52 +199,113 @@
 
                                         <td>
                                             <p>
-                                                This multiplot dashboard
-                                                explores recorded meteorite
-                                                observations using NASA's
-                                                Meteorite Landings dataset.
-                                                It extends the interactive
-                                                spatial visualisation
-                                                developed for Module 9
-                                                by combining multiple
-                                                complementary views.
+                                                This interactive dashboard explores the
+                                                relationship between political unhappiness
+                                                across 25 countries and GDP per capita,
+                                                corruption index and income inequality.
+                                                The dashboard consists of three scatter
+                                                plots, with each comparing the percentage
+                                                of adults who believe their political
+                                                system requires major changes or complete
+                                                reform against each of the listed variables.
+                                                Countries are represented by labelled
+                                                bubbles, with bubble size representing
+                                                population size.
                                             </p>
 
                                             <p>
-                                                [DESCRIBE EACH PLOT AND
-                                                EXPLAIN HOW THE VIEWS
-                                                WORK TOGETHER.]
+                                                The dashboard was inspired by Pew Research
+                                                Center's <em>U.S. stands out among high-income
+                                                nations for unhappiness with political
+                                                system</em>, which originally compared
+                                                political unhappiness with GDP per capita.
+                                                The multivariate versions extend the original
+                                                by using population data from the United
+                                                Nations <em>World Population Prospects
+                                                2024</em>, corruption data from Transparency
+                                                International's <em>Corruption Perceptions
+                                                Index 2025</em>, and income inequality data
+                                                from the World Bank's <em>Gini index</em>.
                                             </p>
                                         </td>
                                     </tr>
 
 
-                                    <!-- DATA SOURCE -->
+                                    <!-- DATA SOURCES -->
 
                                     <tr>
                                         <th scope="row">Data Source</th>
 
                                         <td>
                                             <p>
-                                                National Aeronautics and
-                                                Space Administration
-                                                (NASA). (2025, May 30).
-                                                <em>Meteorite Landings</em>
-                                                [Data set].
-                                                NASA Open Data Portal.
+                                                Pew Research Center. (2026, March 7).
+                                                <em>U.S. stands out among high-income
+                                                nations for unhappiness with political
+                                                system</em> [Data set].
+                                                <a
+                                                    href="https://www.pewresearch.org/chart/__trashed-17/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://www.pewresearch.org/chart/__trashed-17/
+                                                </a>
                                             </p>
 
-                                            <a
-                                                href="https://data.nasa.gov/dataset/meteorite-landings"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                https://data.nasa.gov/dataset/meteorite-landings
-                                            </a>
+                                            <p>
+                                                Pew Research Center. (2025).
+                                                <em>Spring 2025 Survey Data</em>
+                                                [Data set].
+                                                <a
+                                                    href="https://www.pewresearch.org/dataset/spring-2025-survey-data/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://www.pewresearch.org/dataset/spring-2025-survey-data/
+                                                </a>
+                                            </p>
 
                                             <p>
-                                                [ADD ANY OTHER DATA
-                                                SOURCES USED.]
+                                                United Nations, Department of Economic
+                                                and Social Affairs, Population Division.
+                                                (2024).
+                                                <em>World Population Prospects 2024</em>
+                                                [Data set].
+                                                <a
+                                                    href="https://population.un.org/wpp/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://population.un.org/wpp/
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                Transparency International.
+                                                (2026).
+                                                <em>Corruption Perceptions Index 2025</em>
+                                                [Data set].
+                                                <a
+                                                    href="https://www.transparency.org/en/cpi/2025"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://www.transparency.org/en/cpi/2025
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                World Bank.
+                                                (n.d.).
+                                                <em>Gini index</em>
+                                                [Data set].
+                                                World Bank Open Data.
+                                                <a
+                                                    href="https://data.worldbank.org/indicator/SI.POV.GINI"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    https://data.worldbank.org/indicator/SI.POV.GINI
+                                                </a>
                                             </p>
                                         </td>
                                     </tr>
@@ -293,51 +317,140 @@
                                         <th scope="row">Mapping</th>
 
                                         <td>
+
+                                            <p>
+                                                <strong>
+                                                    Chart 1: GDP per capita and
+                                                    political unhappiness
+                                                </strong>
+                                            </p>
+
                                             <ul>
+                                                <li>
+                                                    <strong>X-axis:</strong>
+                                                    GDP per capita, in USD, for each
+                                                    of the 25 countries.
+                                                </li>
 
                                                 <li>
-                                                    <strong>
-                                                        Geographic Position:
-                                                    </strong>
-                                                    Recorded latitude and
-                                                    longitude of meteorites
-                                                    displayed on the map.
+                                                    <strong>Y-axis:</strong>
+                                                    Percentage of adults in each country
+                                                    who say their political system needs
+                                                    major changes or complete reform.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Bubble Size:</strong>
+                                                    Population of each country in millions.
+                                                    Larger bubbles represent countries with
+                                                    larger populations, while smaller bubbles
+                                                    represent countries with smaller populations.
                                                 </li>
 
                                                 <li>
                                                     <strong>Colour:</strong>
-                                                    Recorded meteorite
-                                                    time period.
+                                                    The U.S. is highlighted in blue, while
+                                                    the remaining countries are coloured grey,
+                                                    since Pew Research Center's original
+                                                    visualisation emphasised the U.S.
                                                 </li>
-
-                                                <li>
-                                                    <strong>Marker Size:</strong>
-                                                    Recorded meteorite mass,
-                                                    represented using a
-                                                    logarithmic scale.
-                                                </li>
-
-                                                <li>
-                                                    <strong>
-                                                        Additional Plots:
-                                                    </strong>
-                                                    [DESCRIBE THE VARIABLES,
-                                                    AXES AND ENCODINGS USED
-                                                    IN THE NEW PLOTS.]
-                                                </li>
-
-                                                <li>
-                                                    <strong>
-                                                        Interactivity:
-                                                    </strong>
-                                                    [DESCRIBE FILTERS,
-                                                    HOVER INFORMATION,
-                                                    ANIMATION, SELECTION
-                                                    OR OTHER INTERACTIVE
-                                                    FEATURES ACTUALLY USED.]
-                                                </li>
-
                                             </ul>
+
+
+                                            <p>
+                                                <strong>
+                                                    Chart 2: Perceived corruption and
+                                                    political unhappiness
+                                                </strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    <strong>X-axis:</strong>
+                                                    Corruption Perceptions Index (CPI)
+                                                    score for 2025, ranging from 0
+                                                    (highly corrupt) to 100
+                                                    (very clean).
+                                                </li>
+
+                                                <li>
+                                                    <strong>Y-axis:</strong>
+                                                    Percentage of adults in each country
+                                                    who say their political system needs
+                                                    major changes or complete reform.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Bubble Size:</strong>
+                                                    Population of each country in millions.
+                                                    Larger bubbles represent countries with
+                                                    larger populations, while smaller bubbles
+                                                    represent countries with smaller populations.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Colour:</strong>
+                                                    The U.S. is highlighted in blue, while
+                                                    the remaining countries are coloured grey,
+                                                    maintaining the emphasis used in the
+                                                    original Pew Research Center visualisation.
+                                                </li>
+                                            </ul>
+
+
+                                            <p>
+                                                <strong>
+                                                    Chart 3: Income inequality and
+                                                    political dissatisfaction
+                                                </strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    <strong>X-axis:</strong>
+                                                    Gini index, using the most recent
+                                                    available value for each country.
+                                                    Higher values indicate greater
+                                                    income inequality.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Y-axis:</strong>
+                                                    Percentage of adults in each country
+                                                    who say their political system needs
+                                                    major changes or complete reform.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Bubble Size:</strong>
+                                                    Population of each country in millions.
+                                                    Larger bubbles represent countries with
+                                                    larger populations, while smaller bubbles
+                                                    represent countries with smaller populations.
+                                                </li>
+
+                                                <li>
+                                                    <strong>Colour:</strong>
+                                                    The U.S. is highlighted in blue, while
+                                                    the remaining countries are coloured grey,
+                                                    maintaining the emphasis used in the
+                                                    original Pew Research Center visualisation.
+                                                </li>
+                                            </ul>
+
+
+                                            <p>
+                                                <strong>Interactive Features</strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    The exact values of each data point
+                                                    can be explored by hovering over
+                                                    the selected point.
+                                                </li>
+                                            </ul>
+
                                         </td>
                                     </tr>
 
@@ -345,54 +458,237 @@
                                     <!-- IMPORTANT NOTES -->
 
                                     <tr>
-                                        <th scope="row">
-                                            Important Notes
-                                        </th>
+                                        <th scope="row">Important Notes</th>
+
+                                        <td>
+
+                                            <p>
+                                                <strong>Pew Research Center</strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    The political attitudes data are based
+                                                    on Pew Research Center's Spring 2025
+                                                    Global Attitudes Survey, which surveyed
+                                                    31,938 adults across 25 countries.
+                                                </li>
+
+                                                <li>
+                                                    The survey results represent public
+                                                    views rather than objective measurements
+                                                    of the performance of each country's
+                                                    political system.
+                                                </li>
+
+                                                <li>
+                                                    GDP per capita is expressed in USD.
+                                                </li>
+
+                                                <li>
+                                                    The GDP values used in the original
+                                                    data visualisation were sourced from
+                                                    the World Bank and accessed by Pew
+                                                    Research Center on March 23, 2026.
+                                                </li>
+
+                                                <li>
+                                                    The trend line does not demonstrate
+                                                    a causal relationship between GDP
+                                                    per capita and unhappiness towards
+                                                    political systems.
+                                                </li>
+                                            </ul>
+
+
+                                            <p>
+                                                <strong>United Nations</strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    The UN states that the 2024 Revision
+                                                    contains population estimates informed
+                                                    by censuses, registration systems and
+                                                    nationally representative surveys.
+                                                </li>
+
+                                                <li>
+                                                    The populations for January 1, 2026
+                                                    are used.
+                                                </li>
+
+                                                <li>
+                                                    The dataset used is a Standard
+                                                    Projection in CSV format.
+                                                </li>
+
+                                                <li>
+                                                    The dataset has been cleaned to include
+                                                    only the 25 countries used and to convert
+                                                    population from thousands into millions.
+                                                </li>
+
+                                                <li>
+                                                    The bubble sizes have been scaled
+                                                    by a factor of 1.5 million.
+                                                </li>
+                                            </ul>
+
+
+                                            <p>
+                                                <strong>Transparency International</strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    The Corruption Perceptions Index (2025)
+                                                    measures perceived levels of public-sector
+                                                    corruption using assessments from experts
+                                                    and businesspeople.
+                                                </li>
+
+                                                <li>
+                                                    CPI scores range from 0
+                                                    (highly corrupt) to 100
+                                                    (very clean).
+                                                </li>
+
+                                                <li>
+                                                    The CPI measures perceptions of
+                                                    corruption rather than directly
+                                                    observed corruption.
+                                                </li>
+
+                                                <li>
+                                                    The CPI data have been processed
+                                                    and standardised, with the final
+                                                    values being averages to yield
+                                                    higher accuracy.
+                                                </li>
+                                            </ul>
+
+
+                                            <p>
+                                                <strong>World Bank</strong>
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    The Gini index measures the distribution
+                                                    of income within a country and does not
+                                                    directly measure poverty or general wealth.
+                                                </li>
+
+                                                <li>
+                                                    The values range from 0
+                                                    (perfect equality) to 100
+                                                    (perfect inequality).
+                                                </li>
+
+                                                <li>
+                                                    The most recent available Gini index
+                                                    value is used for each country.
+                                                </li>
+
+                                                <li>
+                                                    Gini indices are not calculated annually,
+                                                    so reference years differ between countries
+                                                    due to variations in data availability.
+                                                </li>
+                                            </ul>
+
+                                        </td>
+                                    </tr>
+
+
+                                    <!-- ACCESS -->
+
+                                    <tr>
+                                        <th scope="row">Access</th>
 
                                         <td>
                                             <ul>
 
                                                 <li>
-                                                    The dashboard includes
-                                                    recorded meteorites
-                                                    within the dataset
-                                                    and does not represent
-                                                    every meteorite that
-                                                    has landed on Earth.
+                                                    The political system and GDP per capita
+                                                    data used in Pew Research Center's
+                                                    original visualisation can be accessed
+                                                    through the
+                                                    <a
+                                                        href="https://www.pewresearch.org/chart/__trashed-17/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        original visualisation page
+                                                    </a>
+                                                    and downloaded as a CSV file.
                                                 </li>
 
                                                 <li>
-                                                    [CONFIRM THE MISSING
-                                                    VALUE FILTERING USED
-                                                    FOR MODULE 10.]
+                                                    The full survey data can also be accessed
+                                                    through Pew Research Center's
+                                                    <a
+                                                        href="https://www.pewresearch.org/dataset/spring-2025-survey-data/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        Spring 2025 Survey Data
+                                                    </a>
+                                                    dataset, although a free account is
+                                                    required for download.
                                                 </li>
 
                                                 <li>
-                                                    [EXPLAIN ANY DATA
-                                                    TRANSFORMATIONS,
-                                                    GROUPING OR SCALING
-                                                    USED IN THE PLOTS.]
+                                                    The United Nations
+                                                    <a
+                                                        href="https://population.un.org/wpp/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        World Population Prospects 2024
+                                                    </a>
+                                                    dataset is available in several
+                                                    formats, including CSV.
                                                 </li>
 
                                                 <li>
-                                                    Geographic clusters
-                                                    of recorded meteorites
-                                                    should not automatically
-                                                    be interpreted as
-                                                    locations with a higher
-                                                    probability of
-                                                    meteorite landings.
+                                                    Transparency International's
+                                                    <a
+                                                        href="https://www.transparency.org/en/cpi/2025"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        Corruption Perceptions Index 2025
+                                                    </a>
+                                                    scores and related documentation
+                                                    can be downloaded as a ZIP archive
+                                                    containing CSV and PDF files.
                                                 </li>
 
                                                 <li>
-                                                    [ADD LIMITATIONS
-                                                    SPECIFIC TO THE
-                                                    DASHBOARD.]
+                                                    The World Bank's
+                                                    <a
+                                                        href="https://data.worldbank.org/indicator/SI.POV.GINI"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        Gini index
+                                                    </a>
+                                                    data can be accessed through World Bank
+                                                    Open Data and downloaded in several
+                                                    formats, including CSV.
                                                 </li>
 
                                             </ul>
                                         </td>
                                     </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
 
 
                                     <!-- ACCESS -->
@@ -461,17 +757,7 @@
 
                             <div>
                                 <dt>Completed</dt>
-                                <dd>[INSERT COMPLETION DATE]</dd>
-                            </div>
-
-                            <div>
-                                <dt>Method</dt>
-                                <dd>Interactive Multiplot Dashboard</dd>
-                            </div>
-
-                            <div>
-                                <dt>Tools</dt>
-                                <dd>Python, Plotly, Posit Connect Cloud</dd>
+                                <dd>October 27, 2026</dd>
                             </div>
 
                             <div>
@@ -480,26 +766,83 @@
                                 <dd class="references">
 
                                     <p>
-                                        National Aeronautics and Space
-                                        Administration (NASA).
-                                        (2025, May 30).
-                                        <em>Meteorite Landings</em>
+                                        Pew Research Center. (2026, March 7).
+                                        <em>
+                                            U.S. stands out among high-income nations
+                                            for unhappiness with political system
+                                        </em>
                                         [Data set].
-                                        NASA Open Data Portal.
 
                                         <a
-                                            href="https://data.nasa.gov/dataset/meteorite-landings"
+                                            href="https://www.pewresearch.org/chart/__trashed-17/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            https://data.nasa.gov/dataset/meteorite-landings
+                                            https://www.pewresearch.org/chart/__trashed-17/
                                         </a>
                                     </p>
 
                                     <p>
-                                        [ADD ADDITIONAL REFERENCES,
-                                        INCLUDING AI TOOLS IF REQUIRED.]
+                                        Pew Research Center. (2025).
+                                        <em>Spring 2025 Survey Data</em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://www.pewresearch.org/dataset/spring-2025-survey-data/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://www.pewresearch.org/dataset/spring-2025-survey-data/
+                                        </a>
                                     </p>
+
+                                    <p>
+                                        United Nations, Department of Economic
+                                        and Social Affairs, Population Division.
+                                        (2024).
+                                        <em>World Population Prospects 2024</em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://population.un.org/wpp/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://population.un.org/wpp/
+                                        </a>
+                                    </p>
+
+                                    <p>
+                                        Transparency International.
+                                        (2026, February 10).
+                                        <em>Corruption Perceptions Index 2025</em>
+                                        [Data set].
+
+                                        <a
+                                            href="https://www.transparency.org/en/cpi/2025"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://www.transparency.org/en/cpi/2025
+                                        </a>
+                                    </p>
+
+                                    <p>
+                                        World Bank. (n.d.).
+                                        <em>Gini index</em>
+                                        [Data set].
+                                        Accessed 25 October, 2026.
+
+                                        <a
+                                            href="https://data.worldbank.org/indicator/SI.POV.GINI?end=2025&amp;start=1963&amp;view=chart"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            https://data.worldbank.org/indicator/SI.POV.GINI?end=2025&amp;start=1963&amp;view=chart
+                                        </a>
+                                    </p>
+
+                                </dd>
 
                                 </dd>
                             </div>
